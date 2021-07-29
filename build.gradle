@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.26'
+
+    // https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api
+    implementation group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
+
+    // ==================================
+
+    // https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core
+//    implementation group: 'org.hibernate.orm', name: 'hibernate-core', version: '6.0.0.Alpha8'
+
+    // https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink
+//    implementation group: 'org.eclipse.persistence', name: 'eclipselink', version: '3.0.2'
+
+    // https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-jpamodelgen
+//    implementation group: 'org.hibernate.orm', name: 'hibernate-jpamodelgen', version: '6.0.0.Alpha8'
+
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,4 +1,4 @@
-package test;
+package classes.part2;
 
 import classes.Aluno;
 import classes.Estado;
